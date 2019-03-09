@@ -14,10 +14,11 @@
 
 <body>
     <div class="navbar">
-        <table align=left>
+        <table>
             <tr>
                 <td>
-                    <img src="MyLogo.jpg" alt="MyLogo" width="72" height="62">
+                    <img class="logo" src="MyLogo.jpg" alt="MyLogo" width="72" height="62"
+                    onclick="location.href='https://hagkal.github.io/My-Website/'">
                 </td>
                 <td>
                     <a href="#About">About Me</a>
@@ -44,7 +45,7 @@
         </table>
     </div>
 
-    <section id="About" class="lines" align=center>
+    <section id="About" class="lines">
         <br>
         <br>
         <br>
@@ -56,40 +57,47 @@
             </span>
 
         </h1>
-        just a test
         <h2>
-            lets give it another try
+            Basic Info
         </h2>
-    </section>
-    <p class="fuckit">
-        uno mas
-    </p>
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <p class="aboutMe">
+            My name is Hagai Kalinhof.
+            <br>
+            I am a 3<sup>rd</sup> year student of Information System Engineering department in Ben-Gurion University.
+            <br>
+            I live in Be'er Sheva very close to the University - and that's very important ;)
+            <br>
+            Originaly I am from a community settalment in the north called 'Kfar-Vradim', it's a small one so if your
+            not recognized with, it's OK - most people are not.
+        </p>
 
-    <section id="Photos" class="lines" align=center>
+        <h2>
+            Foods
+        </h2>
+        <p class="aboutMe">
+            My favorite food goes like this:
+            <ol type="I" class="aboutMe" style="margin-top: 0%">
+                <li>My mom's food</li>
+                <li>Lasagna</li>
+                <li>Bamba</li>
+            </ol>
+        </p>
+
+        <h2>
+            Stuff you didn't know about me
+        </h2>
+        <p class="aboutMe">
+            I have a middle name! It's Shalom, so my full name is acctualy: <br>
+            Hagai Shalom Kalinhof
+            <br>
+            FC Barcelona is my favorite team.
+            <br>
+            I preffer salty manchis rather then sweet manchis!
+        </p>
+
+    </section>
+
+    <section id="Photos" class="lines">
         <br>
         <br>
         <br>
@@ -100,13 +108,13 @@
                 My Photos
             </span>
         </h1>
-        <img src="img1.jpeg" alt="image1" style="width:25%">
-        <img src="img2.jpg" alt="image2" style="width:25%">
-        <img src="img3.JPG" alt="image3" style="width:25%">
-        <img src="img4.JPG" alt="image4" style="width:25%">
+        <img class="show" src="img1.jpeg" alt="image1" style="width:25%">
+        <img class="show" src="img2.jpg" alt="image2" style="width:25%">
+        <img class="show" src="img3.JPG" alt="image3" style="width:25%">
+        <img class="show" src="img4.JPG" alt="image4" style="width:25%">
     </section>
 
-    <section id="Playlist" class="lines" align=center>
+    <section id="Playlist" class="lines">
         <br>
         <br>
         <br>
@@ -116,11 +124,17 @@
             <span>
                 My Playlist
             </span>
-
+            <h2 class="aboutMe" style="text-align: center">
+                I have used this Playlist while doing this work
+            </h2>
+            <br>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?list=PLIghpSV4NkpTE-lWc-0dsWTzJsyjo-C_C" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </h1>
     </section>
 
-    <section id="Like" class="lines" align=center>
+    <section id="Like" class="lines">
         <br>
         <br>
         <br>
@@ -130,11 +144,17 @@
             <span>
                 Like My Page
             </span>
-
         </h1>
+
+        <br>
+        <iframe style="align-items: center"
+            src="http://www.facebook.com/plugins/like.php?href=https://hagkal.github.io/My-Website/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80&amp"
+            scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;"
+            allowTransparency="true"></iframe>
+
     </section>
 
-    <section id="QR" class="lines" align=center>
+    <section id="QR" class="lines">
         <br>
         <br>
         <br>
@@ -146,24 +166,133 @@
             </span>
 
         </h1>
+
+        <img style="cursor: grab" src="QRCode.png" alt="QRCode">
     </section>
 
-    <section id="Q&A" class="lines" align=center>
+    <section id="Q&A">
         <br>
         <br>
         <br>
         <br>
-        <br>
-        <h1>
-            <span>
-                Q&A
-            </span>
 
-        </h1>
+        <header class="lines">
+            <h1>
+                <span>
+                    Q&A
+                </span>
+            </h1>
+        </header>
+
+        <article class="lala">
+            <h3 style="text-align: center; text-decoration-line: underline; font-size: 120%">
+                Basic Concepts
+            </h3>
+            <p>
+                Web 1.0, 2.0 and 3.0 are conceptual buzz words ment to describe the everchanging World-Wide-Web.
+            </p>
+
+            <p>
+                <span class="web">Web 1.0: </span>
+                <br>
+                Also known as the <span class="italic"> “readable”</span> phrase of the World Wide Web with flat data.
+                In Web 1.0, there is only limited
+                interaction between sites and web users. Web 1.0 is simply an information portal where users passively
+                receive information without being given the opportunity to post reviews, comments, and feedback.
+            </p>
+            <p>
+                <span class="web">Web 2.0: </span>
+                <br>
+                Also known as the <span class="italic">“writable”</span> phrase of the World Wide Web with interactive
+                data. Unlike Web 1.0, Web 2.0
+                facilitates interaction between web users and sites, so it allows users to interact more freely with
+                each other. Web 2.0 encourages participation, collaboration, and information sharing.
+                <br>
+                Some websites considered web 2.0 cannot be existed without users which are contributers, for example:
+                Facebook would vanish if users will not
+                contribute themselfs to it.
+            </p>
+            <p>
+                <span class="web">Web 3.0: </span>
+                <br>
+                Also known as the <span class="italic"> “executable”</span> phrase of Word Wide Web with dynamic
+                applications, interactive services, and
+                “machine-to-machine” interaction. Web 3.0 is a semantic web which refers to the future. In Web 3.0,
+                computers can interpret information like humans and intelligently generate and distribute useful content
+                tailored to the needs of users. One example of Web 3.0 is Tivo, a digital video recorder. Its recording
+                program can search the web and read what it finds to you based on your preferences.
+            </p>
+
+            <h3>
+                Q1: "What are 3 differences between those webs?"
+                <br>
+                A1: Let's see it in the following table
+            </h3>
+            <table border="2" class="info">
+                <tr>
+                    <td class="crossed"></td>
+                    <td class="web">Web 1.0</td>
+                    <td class="web">Web 2.0</td>
+                    <td class="web">Web 3.0</td>
+                </tr>
+                <tr>
+                    <td class="web">Usages</td>
+                    <td class="info">Mainly for information portals where users passively receive information without
+                        being given the opportunity to post reviews, comments, and feedback.</td>
+                    <td class="info">Mainly websites which incourage participation, collaboration, and information
+                        sharing between users. That also include all peer-to-peer eCommerce websites (eBay for example).
+                    </td>
+                    <td class="info">Mainly for indroducing state of the art technologies into the website user
+                        experience.
+                        These sites use AI and IoT to make the web feel like an intelligent human is out there making
+                        sure you will get what you need.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="web">Site Contributers</td>
+                    <td class="info">Only the website owner/handler is adding information.</td>
+                    <td class="info">Users also add infomation to the web by commenting, reviewing and posting.</td>
+                    <td class="info">Machines also can add infomation into the web, for example your smart watch can
+                        post your current heart rate to your site.</td>
+                </tr>
+                <tr>
+                    <td class="web">Used Technologies</td>
+                    <td class="info">HTML, CSS on Client side and Perl, PHP, Python, Ruby, as well as Enterprise Java
+                        (J2EE) and Microsoft.NET Framework on Server side</td>
+                    <td class="info">Introduced AJAX, JavaScript, Adobe Flash to make the websites dynamic</td>
+                    <td class="info">Semantic Web, Artificial Intelligence, 3D Graphics, Connectivity, Ubiquity to make
+                        the websites much 'smarter'</td>
+                </tr>
+            </table>
+
+            <h3>
+                Q2: "Is there any difference between the webs if im shopping for a new computer?"
+                <br>
+                A2: Sure there is, lets see
+            </h3>
+            <p>
+                <span class="web">In Web 1.0</span> shopping for a computer would force you to enter to every website that you know that sells
+                computers and look for the computer that you like.
+                If you are lucky you would find a shopping portal that would gather all shops of computer for you.
+                <br>
+                <span class="web">In Web 2.0</span> websites such as eBay have come to life. This means that now you surely have a portal of
+                shops selling computers, and now also regular people (not stores) can post their own used computer or a
+                brand new one.
+                This would give you a much better choice and information about whats out there to buy.
+                <br>
+                <span class="web">In Web 3.0</span> you can enter a website such as Amazon and list all the requirments that you wish on the
+                computer. The website would use his own algorithms to match you with the best product he can find.
+                Also the website can recommend you of computers which are common by your internet profile as well as
+                give you a completing products for the one you looked for - this would make your life much simpler!
+                
+
+            </p>
+
+        </article>
     </section>
 
 
-    <section id="Contact" class="lines" align=center>
+    <section id="Contact" class="lines">
         <br>
         <br>
         <br>
